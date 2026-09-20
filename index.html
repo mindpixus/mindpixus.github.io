@@ -58,6 +58,27 @@ section{ padding-block:clamp(56px,9vw,108px); }
   box-shadow:0 0 10px var(--cyan-bright);
 }
 
+/* ---------- Site header / brand mark ---------- */
+.site-header{
+  background:#0a0e1c;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.site-header .wrap{
+  display:flex; align-items:center; padding-block:14px;
+}
+.brand{
+  display:inline-flex; align-items:center; gap:10px; text-decoration:none;
+}
+.brand-mark{
+  width:34px; height:34px; border-radius:50%; display:block; flex:none;
+  box-shadow:0 0 12px rgba(102,243,236,.4);
+}
+.brand-name{
+  font-family:'Unbounded',system-ui,sans-serif; font-weight:700; font-size:1rem;
+  letter-spacing:.01em; color:#eef1fb;
+}
+.brand-name .brand-us{ color:#66f3ec; }
+
 /* ---------- HERO (deliberately always dark: a signal from space) ---------- */
 .hero{
   position:relative; overflow:hidden;
@@ -248,6 +269,14 @@ footer p{ margin-inline:auto; font-size:.82rem; }
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Sora:wght@400;500;600;700&display=swap">
 </head>
 <body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="MindPixUS home">
+      <img class="brand-mark" src="mindpixus-mark.png" alt="" width="34" height="34">
+      <span class="brand-name">MindPix<span class="brand-us">US</span></span>
+    </a>
+  </div>
+</header>
 <section class="hero">
   <div class="wrap">
     <div>
