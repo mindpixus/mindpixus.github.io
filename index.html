@@ -364,7 +364,7 @@ footer p{ margin-inline:auto; font-size:.82rem; }
       <input type="email" id="joinEmail" placeholder="you@example.com" required>
       <button type="submit" class="btn btn-primary">Notify me</button>
     </form>
-    <p class="join-note">Right now this opens an email straight to MindPixUS. Swap in your own sign-up form link any time &mdash; see <code>SIGNUP_URL</code> nea the bottom of this file.</p>
+    <p class="join-note">Your email goes straight into our sign-up list &mdash; we'll never share it.</p>
     <div class="socials">
       <a class="social-link" href="https://www.youtube.com/@MindPixUS" target="_blank" rel="noopener">YouTube</a>
       <a class="social-link" href="https://www.instagram.com/mindpixus" target="_blank" rel="noopener">Instagram</a>
@@ -381,8 +381,8 @@ footer p{ margin-inline:auto; font-size:.82rem; }
 
 <script>
 (function(){
-  // ---- Edit this one line once you have your own sign-up form (Google Form / Kit / etc). ----
-  var SIGNUP_URL_TEMPLATE = "mailto:mindpixus@gmail.com?subject=Notify%20me%20for%20Lesson%201.1&body=Please%20notify%20me%20at%20";
+  // Live MindPixUS Google Form — responses are collected automatically into a Google Sheet.
+  var SIGNUP_URL_TEMPLATE = "https://docs.google.com/forms/d/e/1FAIpQLSePpPnKIRvrwa0riWsKq1FTh9ASl-HrAs7Fg7mZw9G4fPDdsA/viewform?usp=pp_url&entry.1561551817=";
 
   var form = document.getElementById('joinForm');
   var notifyBtn = document.getElementById('notifyBtn');
